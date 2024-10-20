@@ -18,9 +18,13 @@ public class MainActivity extends AppCompatActivity {
         EditText fullNameText = findViewById(R.id.fullName);
         EditText usernameText = findViewById(R.id.username);
         EditText emailText = findViewById(R.id.email);
+        EditText passwordText = findViewById(R.id.password);
+        EditText confirmPasswordText = findViewById(R.id.confirmPassword);
         TextView txtResultView = findViewById(R.id.txtResult);
         Button btnSave = findViewById(R.id.btnSave);
 
+
+        // Send data back to MainActivity when the button is clicked
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
                 String username = usernameText.getText().toString();
                 String email = emailText.getText().toString();
                 txtResultView.setText("Registration Success!! \n" +
-                        "Full Name:\t" + fullNameValue + "\nUsername : " +
-                        username + "\nEmail:" + email);
+                        "Full Name: " + fullNameValue + "\nUsername : " +
+                        username + "\nEmail: " + email);
             }
         });
 
