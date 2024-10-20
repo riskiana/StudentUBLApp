@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         EditText fullNameText = findViewById(R.id.fullName);
         EditText usernameText = findViewById(R.id.username);
         EditText emailText = findViewById(R.id.email);
-        EditText passwordText = findViewById(R.id.password);
-        EditText confirmPasswordText = findViewById(R.id.confirmPassword);
         TextView txtResultView = findViewById(R.id.txtResult);
         Button btnSave = findViewById(R.id.btnSave);
 
